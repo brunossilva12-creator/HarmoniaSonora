@@ -1,0 +1,168 @@
+:root{
+    --cinza: #818181;
+    --vermelho: #ff001e;
+    --vermelho-escuro: #69000c;
+    --branca: #ffffff;
+    --luz: rgb(255, 238, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #8bc2d8 0%, #0a06f1 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branca);
+    font-size: 1.8rem;
+}
+
+.memes{
+    background: linear-gradient(45deg, #325109 0%, #fe0101 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branca);
+    font-size: 1.8rem;
+}
+
+.jogos{
+    background: linear-gradient(45deg, #511509 0%, #01fe0e 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branca);
+    font-size: 1.8rem;
+}
+
+.diversos{
+    background: linear-gradient(45deg, #4c5455 0%, #01d0fe 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branca);
+    font-size: 1.8rem;
+}
+
+.cabecalho{
+    display: block;
+    background-color: rgb(0, 229, 255);
+    padding: 20px;
+    color: black;
+}
+
+.cabecalho-memes{
+    display: block;
+    background-color: rgb(34, 255, 0);
+    padding: 20px;
+    color: black;
+}
+
+.imagens{
+    width: 400px;
+    height: 35vh;
+}
+
+.cabecalho-jogos{
+    display: block;
+    background-color: rgb(221, 255, 0);
+    padding: 20px;
+    color: black;
+}
+
+.cabecalho-diversos{
+    display: block;
+    background-color: rgba(255, 77, 0, 0.621);
+    padding: 20px;
+    color: black;
+}
+
+.cabecalho-titulo{
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.principal{
+    margin-top: 20px;
+}
+
+.principal-texto{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.principal-links{
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    border: 2px solid var(--vermelho-escuro);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 15px 0;
+    text-decoration: none;
+    color: var(--vermelho);
+}
+
+.principal-links:hover{
+    text-decoration: underline;
+    background-color: var(--luz);
+}
+
+.teclado{
+    background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 11px 3px #5c5252;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.tecla{
+    background-color: var(--branca);
+    box-shadow: 3px 3px 0 var(--cinza);
+    height: 120px;
+    width: 120px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--vermelho);
+    cursor: pointer;
+}
+
+.tecla.ativa,
+.tecla:active{
+    background-color: var(--vermelho);
+    border: 4px solid var(--vermelho);
+    box-shadow: 3px 3px 0 var(--vermelho-escuro) inset;
+    color: var(--branca);
+    outline: none;
+}
+
+.tecla.focus,
+.tecla:focus{
+    outline: none;
+    box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.ativa:focus,
+.tecla:active:focus{
+    box-shadow: 3px 3px 0 var(--vermelho-escuro) inset, 1px 1px 10px var(--luz);
+}
