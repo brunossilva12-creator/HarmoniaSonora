@@ -27,7 +27,7 @@ Uma aplicação web de **Soundboard interativo** que reúne efeitos sonoros vari
 ### 🚀 Como executar localmente
 1. Clone este repositório:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/brunossilva12-creator/HarmoniaSonora
    ```
 2. Abra a pasta do projeto e execute o arquivo `index.html` diretamente no seu navegador.
 
@@ -56,7 +56,7 @@ An interactive **web Soundboard** featuring a collection of sound effects organi
 ### 🚀 How to run locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/brunossilva12-creator/HarmoniaSonora
    ```
 2. Open the project folder and launch the `index.html` file in your browser.
 
